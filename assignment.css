@@ -1,0 +1,16 @@
+#assignment, #submission {
+	margin-top: 10px;
+	margin-left: 20px;
+	background-color: rgba(145,218,255,0.3);
+	border: 1px solid black;
+	border-style: hidden;
+	border-radius:6px;
+	width: 50%;
+	padding: 10px;
+}
+
+form {
+	width: 50%;
+	margin-left: 20px;
+	margin-top: 10px;
+}

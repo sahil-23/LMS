@@ -1,0 +1,46 @@
+var rows = document.getElementsByClassName("item_action_bar");  
+for(var i=0 ; i<rows.length ; i++)
+	{ 
+		if(!rows[i].className.match(/answer_voters_row/)) 
+			{	
+				if(rows[i].getElementsByClassName("add_upvote").length > 0)
+				{
+					var ele = document.createElement("span");
+					var link = document.createElement("a");
+					var bullet = document.createElement("span");
+					bullet.appendChild(document.createTextNode("•"));
+					bullet.className = "bullet";
+					link.href = "#";
+					if(rows[i].parentNode.getElementsByClassName("timestamp")[0].getElementsByTagName("a").length > 0)
+					{
+						var whereto = rows[i].parentNode.getElementsByClassName("timestamp")[0].getElementsByTagName("a")[0].href;
+					}
+					else
+					{
+						var whereto = "#";
+					}
+					
+					link.setAttribute("whereto", whereto);
+					link.appendChild(document.createTextNode("Later"));
+					ele.appendChild(link);
+
+					rows[i].appendChild(bullet) ;
+					rows[i].appendChild(ele) ;
+				}
+			}
+	}
+
+$(document.head || document.documentElement).append("<style type='text/css' id='prank'> div.star-box-details strong span, div.star-box-giga-star {visibility : hidden ;}   </style>") ;
+$(document).ready(function(){
+	var ele = document.getElementsByClassName("star-box-giga-star")[0] ;
+	ele.firstChild.nodeValue = "0" ;
+
+	ele = document.getElementsByClassName("star-box-details")[0].getElementsByTagName("strong")[0].getElementsByTagName("span")[0] ;
+	ele.firstChild.nodeValue = "0" ;
+	
+	$("style").remove("#prank");
+
+}) ;
+
+
+

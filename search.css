@@ -1,0 +1,17 @@
+a {
+	text-decoration: none;
+}
+#group,#student,#professor {
+	width: 30%;
+	float: left;
+	border: 1px solid black;
+	margin-right: 20px;
+	padding: 10px;
+	background-color: rgba(145,218,255,0.3);
+	border: 1px solid black;
+	border-style: hidden;
+	border-radius:6px;
+}
+#search {
+	margin-top: 20px;
+}

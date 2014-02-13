@@ -1,0 +1,61 @@
+.my-container {
+	padding: 0 15px;
+	width: 100%;
+}
+
+#create_group {
+	margin-top: 10px;
+	padding: 0 10px;
+}
+#create_group form{
+	padding: 10px;
+	background-color: rgba(145,218,255,0.3);
+	border: 1px solid black;
+	border-style: hidden;
+	border-radius:6px;
+}
+
+#groups {
+	margin-top: 30px;
+	padding: 0 10px;
+}
+#feed {
+	padding-right: 60px;
+	padding-left: 20px;
+}
+#create_group form {
+	margin-top: 20px;
+}
+/*.left {
+	float: left;
+	width: 50%;
+	border: 1px solid black;
+	padding: 10px;
+	margin-right: 10px;
+}
+.right {
+	float: left;
+	width: 48%;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+#create_group textarea {
+	width: 200px;
+	height: 100px;
+}
+
+#create_group label {
+	vertical-align: top;
+}
+
+#create_group #name{
+	margin-left: 30px;
+}
+
+fieldset {
+	border: 0;
+}
+
+
+*/
